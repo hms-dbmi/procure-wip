@@ -14,7 +14,7 @@ jobs:
     - name: Build 
       run: npm install && npm run-script build
 
-    - run: mv "/home/actions/actions-runner/_work/procure-wip/build/config-override-demo.json /home/actions/actions-runner/_work/procure-wip/config-override.json
+    - run: mv /home/actions/actions-runner/_work/procure-wip/build/config-override-demo.json /home/actions/actions-runner/_work/procure-wip/config-override.json
       shell: bash
 
     - name: Deploy
