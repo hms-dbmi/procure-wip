@@ -14,8 +14,8 @@ jobs:
     - name: Build 
       run: npm install && npm run-script build
 
-    - name: Config
-      run: mv ./build/config-override-demo.json ./build/config-override.json
+    - run: mv "/home/actions/actions-runner/_work/procure-wip/build/config-override-demo.json /home/actions/actions-runner/_work/procure-wip/config-override.json
+      shell: bash
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
